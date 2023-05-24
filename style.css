@@ -1,0 +1,705 @@
+/* custom logo */
+
+.logo {
+  width: 75px;
+}
+body {
+  background-color: black;
+  font-size: 15px;
+}
+
+.logo-smartphone {
+  width: 80px;
+}
+
+/* custom foont ; color*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --yellow: #ffea00;
+  --black: #000000;
+  --white: #edf2f4;
+  --red: #d90429;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+
+.text-black {
+  color: var(--black);
+}
+.text-white {
+  color: var(--white);
+}
+.text-red {
+  color: var(--red);
+}
+
+/* start custom nav */
+.navbar {
+  height: 80px;
+  transition: 0.5s;
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: red !important;
+  text-shadow: 2px 2px 7px var(var(--red)), -2px -2px -7px var(var(--red));
+}
+
+/* end custom nav */
+
+/* start custom  header */
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0), transparent, rgba(0, 0, 0)),
+    url(https://thumbs.dreamstime.com/b/interno-dell-astronave-con-la-vista-sul-pianeta-terra-d-che-rende-el-89378555.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* h1 {
+  text-shadow: 4px 4px 7px var(--white);
+  font-size: 100px;
+  color: var(--yellow);
+} */
+
+.btn-custom {
+  color: var(--yellow);
+  background-color: var(--black);
+  border: 2px solid var(--yellow);
+  border-radius: 50px;
+  margin: 0px 15px;
+  padding: 20px 30px;
+  transition: 0.5s;
+}
+
+.btn-custom:hover {
+  color: var(--black);
+  background-color: var(--yellow);
+  transform: scale(1.1);
+}
+/* start custom div cusrsor */
+.outline {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 2px solid var(--yellow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  mix-blend-mode: difference;
+  transform: translate(-64px, -64px);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 0.1);
+  pointer-events: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  transform: translate(-8px, -8px);
+  pointer-events: none;
+}
+
+/* end custom div cusrsor */
+
+/* start section paragrafi */
+
+.custom-positioned {
+  position: relative;
+  top: -100px;
+}
+
+.col-custom {
+  padding: 10px;
+  border: 2px solid black;
+  transition: 0.4s;
+}
+
+/* .col-custom:hover {
+  transform: scale(1.1);
+  background-color: var(--black);
+  color: #d90429;
+} */
+
+.transizioneParagrafi {
+  transform: scale(1.1);
+  background-color: var(--white);
+  color: #d90429;
+}
+/* end section paragrafi */
+
+/* start custom contatore */
+
+.number {
+  font-size: 50px;
+  font-weight: 900;
+}
+/* end custom contatore */
+
+/* start custom section metrite / danger */
+
+.section-meteorite {
+  background-image: linear-gradient(rgba(0, 0, 0), transparent, rgba(0, 0, 0)),
+    url(https://cdn.pixabay.com/photo/2020/11/13/02/28/asteroid-5737398_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+/* https://cdn.pixabay.com/photo/2020/11/05/17/09/earth-5715590_960_720.jpg * immagine 2/
+
+h2 {
+  font-family: "Rubik Iso", cursive;
+  text-shadow: 4px 4px 7px var(--white);
+}
+/* card */
+.animation {
+  width: 100px;
+  height: 50px;
+  background-color: var(--yellow);
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {
+  animation-timing-function: linear;
+}
+#div2 {
+  animation-timing-function: ease;
+}
+#div3 {
+  animation-timing-function: ease-in;
+}
+#div4 {
+  animation-timing-function: ease-out;
+}
+#div5 {
+  animation-timing-function: ease-in-out;
+}
+
+.stile-font {
+  font-family: "Tilt Prism", cursive;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+/* start custom titolo danger */
+.cust-danger {
+  background-color: var(--black);
+  font-family: "Rubik Iso", cursive;
+  text-shadow: 4px 4px 7px var(--white);
+}
+/* end custom titolo danger */
+
+/* start section custom meteorite terra */
+#containerMeteorite {
+  height: 400px;
+  width: 500px;
+  position: relative;
+}
+
+#animateMeteorite {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.distruggi-dinosauri {
+  height: 300px;
+  width: 350px;
+}
+
+.mostrati {
+  display: block;
+}
+
+.nasconditi {
+  display: none;
+}
+
+.btn-custom-distruzione {
+  background-color: var(--red);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-custom-distruzione:hover {
+  background-color: var(--black);
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+/* end section custom meteorite terra */
+
+@keyframes vola2 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes vola2 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes vola2 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes vola2 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+/* start custom section recensioni carosello */
+
+.card-review {
+  height: 250px;
+  width: 500px;
+  border: 2px solid var(--yellow);
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* start custom pagina annunci */
+
+/* start section accordion */
+
+.section-h1-custom {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.accordion-item,
+.accordion-button {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--red);
+  background-color: var(--black);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.card-custom {
+  width: 30%;
+  border: 2px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.img-card {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/* end section accordion */
+
+/* start section chi siamo */
+
+.section-chisiamo {
+  margin-top: 150px;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.opener {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  background-color: var(--black);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.moved {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+.flip-card {
+  height: 400px;
+  width: 250px;
+}
+
+.flip-card:hover > .inner {
+  transform: rotateY(180deg);
+}
+.inner {
+  height: 100%;
+  width: 100%;
+  border: 2px solid var(--yellow);
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.inner-face {
+  height: 400px;
+  width: 250px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.inner-back {
+  height: 400px;
+  width: 250px;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 15px;
+}
+/* end section chi siamo */
+
+/* start footer section immagini */
+.custom-img {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+
+.custom-container {
+  top: 300px;
+  width: 300px;
+  height: 65vh;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg) rotateZ(-10deg);
+  animation: ror 20s linear infinite;
+}
+
+@keyframes ror {
+  50% {
+    transform: rotateX(30deg);
+  }
+  80% {
+    transform: rotateX(-30deg);
+  }
+}
+
+.images {
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.img1 {
+  transform: rotateY(60deg) translateZ(300px);
+}
+.img2 {
+  transform: rotateY(120deg) translateZ(300px);
+}
+.img3 {
+  transform: rotateY(180deg) translateZ(300px);
+}
+.img4 {
+  transform: rotateY(240deg) translateZ(300px);
+}
+.img5 {
+  transform: rotateY(300deg) translateZ(300px);
+}
+.img6 {
+  transform: rotateY(360deg) translateZ(300px);
+}
+/* end sectiorn footer immagini */
+
+/* start footer section scritta neon */
+/* @import url(https://fonts.googleapis.com/css?family=Exo+2:200i); */
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+h5 {
+  font-size: 8rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+}
+
+h5::-moz-selection {
+  background-color: var(--yellow);
+  color: var(--neon-text-color);
+}
+
+h5::selection {
+  background-color: var(--yellow);
+  color: var(--neon-text-color);
+}
+
+h5:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff,
+      0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color),
+      0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color),
+      0 0 10rem var(--neon-text-color);
+
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--yellow),
+      inset 0 0 2rem var(--yellow), 0 0 4rem var(--yellow),
+      inset 0 0 4rem var(--yellow);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.custom-container-social {
+  margin-top: 100px;
+  height: 100px;
+  width: 500px;
+}
+/* end footer scti
+/* end footer sction scritta neon */
+
+footer {
+  position: relative;
+  width: 100%;
+  background: var(--neon-border-color);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 200px;
+}
+
+footer .social_icons,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social_icons li,
+footer .menu {
+  list-style: none;
+}
+footer .social_icons li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icons li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./media/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .colFilpCardMQ {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}

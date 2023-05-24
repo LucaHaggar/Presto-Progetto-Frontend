@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space</title>
+
+    <!-- cdn swiper js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- cdn foont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdn css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- start nav -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-black">
+      <div class="container-fluid" id="navbarContainer">
+        <div class="logo rocket-custom">
+          <img
+            id="logoNavbar"
+            src="./media/logo-bianco.png"
+            class="img-fluid"
+            alt="immaggine razzo"
+          />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            ><img
+              src="./media/navicella.png"
+              class="logo-smartphone"
+              alt="immagine navicella"
+          /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./annunci.html">Annunci</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chi Siamo</a>
+            </li>
+          </ul>
+          <div class="logo"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start div per custom cursor -->
+    <div class="cursor"></div>
+    <div class="outline"></div>
+    <!-- end div per custom cursor -->
+
+    <!-- section chi siamo -->
+    <section class="container-fluid section-chisiamo">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-yellow">Chi Siamo</h1>
+          <section class="container-fluid">
+            <div class="row vh-75">
+              <div
+                class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+              >
+                <div class="circle">
+                  <div class="opener">
+                    <i class="fa-solid fa-plus fa-3x text-yellow"></i>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex align-items-center colFilpCardMQ"
+              >
+                <div class="flip-card d-none">
+                  <div class="inner">
+                    <div class="inner-face"></div>
+                    <div class="inner-back">
+                      <h3 id="cardName" class="text-yellow"></h3>
+                      <p id="cardDescription" class="text-yellow"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- end section chi siamo -->
+
+    <!-- start footer 1-->
+    <!-- <section class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="container custom-container">
+            <div class="images">
+              <img
+                src="https://cdn.pixabay.com/photo/2010/12/05/space-shuttle-992_960_720.jpg"
+                class="custom-img img1"
+                alt="immagine shuttle"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2012/10/10/11/05/space-station-60615_960_720.jpg"
+                class="custom-img img2"
+                alt="immagine luna"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2011/12/14/12/22/astronaut-11110_960_720.jpg"
+                class="custom-img img3"
+                alt="astronauta"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2016/07/02/12/21/eclipse-1492818_960_720.jpg"
+                class="custom-img img4"
+                alt="pianeta"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2017/03/11/11/44/man-2134881_960_720.jpg"
+                class="custom-img img5"
+                alt="luna"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2012/08/25/22/22/saturn-54999_960_720.jpg"
+                class="custom-img img6"
+                alt="saturno"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-6 custom-col6 justify-content-center text-center align-item-center"
+        >
+          <div class="container-fluid custom-container-social">
+            <h5 class="custom-social">
+              Social
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-solid fa-envelope"></i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end footer -->
+
+    <!-- start footer 2 -->
+    <footer class="" id="footerChangeColor">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icons">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>© 2022 Company, Inc</p>
+    </footer>
+    <!-- end footer 2 -->
+
+    <!-- cdn icone -->
+    <script
+      src="https://kit.fontawesome.com/d83d50a182.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- cdn script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- cdn script swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./chisiamo.js"></script>
+  </body>
+</html>
